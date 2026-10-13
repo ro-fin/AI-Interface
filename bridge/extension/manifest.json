@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Cameo Bridge",
+  "version": "0.2.0",
+  "description": "Reports real tab facts to Cameo on this computer and performs tab actions it requests. No page access.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtaFMXkTvjtvwhP/V+bU8/nvHtewdpNZ9yNxHzp8k89kHl0D7JmDrNfRcn40cPi3SjykBAyxZ6d9Cx3q0p/DdWpc2eF/937qfd6AH0tDEvUL2Ruij97XPjVM+LEDUWQjJBeNdC32dNPeY2qOlRD9LTMJXLXC/+B1VcRLqmt6VtINW6/k9HICY5JnQ3FL7IfR6mT1sGQRqdfCucI3yR8rbf1ZTCE4OeAcFNY/QUogcddFEStGsG5H8M/3u8XdRD/6tkSYFuGZypPfeu6p8UhMcL/9i1bnVMQ3sgt7kbEXZPvjlIRSQm6RZecNMdku0BSJUYLOPhNkPmjtEwlTkaoZY9QIDAQAB",
+  "permissions": ["tabs", "nativeMessaging", "alarms", "background"],
+  "background": {"service_worker": "background.js"}
+}

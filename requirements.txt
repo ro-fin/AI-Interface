@@ -1,0 +1,11 @@
+# Python 3.10 - 3.12 (MediaPipe has no wheels for newer versions). Windows 10/11 or Linux (X11 session).
+mediapipe==0.10.32
+opencv-contrib-python==4.11.0.86
+numpy==1.26.4
+Pillow==11.3.0
+sounddevice==0.5.6
+vosk==0.3.45
+cryptography==46.0.1   # device link encryption (AES-GCM)
+zeroconf==0.147.2      # device discovery over mDNS (UDP beacons work without it)
+uiautomation==2.0.20; sys_platform == "win32"
+python-xlib==0.33; sys_platform == "linux"

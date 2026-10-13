@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+# Voice models and engines (large; a link to another drive on the developer's PC)
+/runtime
+# Made per machine by scripts/install_bridge.py
+bridge/host/cameo_bridge_host.bat
+bridge/host/cameo_bridge_host.sh
+bridge/host/dev.cameo.bridge.json
+# MediaPipe hand model (download it, see README)
+cameo/models/*.task

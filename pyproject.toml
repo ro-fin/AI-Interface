@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cameo"
+version = "2.0.0"
+description = "Cameo desktop assistant: hand signs, voice commands and a HUD that control Windows and Linux (X11) desktops"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "mediapipe==0.10.32",
+    "opencv-contrib-python==4.11.0.86",
+    "numpy==1.26.4",
+    "Pillow==11.3.0",
+    "sounddevice==0.5.6",
+    "vosk==0.3.45",
+    "cryptography==46.0.1",
+    "zeroconf==0.147.2",
+    "uiautomation==2.0.20; sys_platform == 'win32'",
+    "python-xlib==0.33; sys_platform == 'linux'",
+]
+
+[project.scripts]
+cameo = "cameo.__main__:main"
+
+[tool.setuptools]
+packages = ["cameo", "cameo.control", "cameo.gestures", "cameo.link", "cameo.vision", "cameo.voice"]
+
+[tool.setuptools.package-data]
+cameo = ["models/*.task", "models/*.sha256"]
